@@ -4,7 +4,10 @@
   "description": "In this project we created a simple library logging website, where you can add books to the library, remove books, and set the books that you have to read/unread.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",

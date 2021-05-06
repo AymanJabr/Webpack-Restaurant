@@ -19,7 +19,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Usage
-go to `dist` folder and double click on `index.html` to open project in new browser window
+1) go to `dist` folder and double click on `index.html` to open project in new browser window
+
+2) Use npm commands to run the script  
+a - run `npm run dev` to build project in development mode.  
+b - run `npm run build` to build project in production mode.  
+c - run `npm run start` to build project in development mode and run it in a local server.  
+d - run `npm run watch` to build project and watch the files for any changes.  
 
 ## AUTHORs
 
