@@ -1,0 +1,23 @@
+{
+  "name": "webpack-resturant",
+  "version": "1.0.0",
+  "description": "In this project we created a simple library logging website, where you can add books to the library, remove books, and set the books that you have to read/unread.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AymanJabr/Webpack-Restaurant.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AymanJabr/Webpack-Restaurant/issues"
+  },
+  "homepage": "https://github.com/AymanJabr/Webpack-Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
