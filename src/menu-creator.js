@@ -1,6 +1,4 @@
-import { createNavigation } from './nav-creator'
-import { createMainPage } from './main-page'
-import { createContactPage } from './contact-creator'
+import { createNavigation, addAllEventListeners } from './nav-creator'
 
 function createMenuPage() {
     let content = document.getElementById('content')
@@ -17,6 +15,8 @@ function createMenuPage() {
     content.innerHTML += restaurantTitle
     content.innerHTML += restaurantImage
     content.innerHTML += restaurantDescription
+
+    addAllEventListeners()
 }
 
 export {createMenuPage}
