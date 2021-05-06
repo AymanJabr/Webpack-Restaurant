@@ -1,4 +1,4 @@
-import { createMainPage } from './main-page';
+import createMainPage from './main-page';
 
 createMainPage();
 

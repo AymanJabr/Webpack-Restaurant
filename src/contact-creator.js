@@ -1,4 +1,6 @@
+/* eslint-disable import/no-cycle */
 import { createNavigation, addAllEventListeners } from './nav-creator';
+/* eslint-enable import/no-cycle */
 
 function createContactPage() {
   const content = document.getElementById('content');
@@ -18,4 +20,4 @@ function createContactPage() {
   addAllEventListeners();
 }
 
-export { createContactPage };
+export default createContactPage;

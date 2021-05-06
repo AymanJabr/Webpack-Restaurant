@@ -1,6 +1,8 @@
-import { createMainPage } from './main-page';
-import { createContactPage } from './contact-creator';
-import { createMenuPage } from './menu-creator';
+/* eslint-disable import/no-cycle */
+import createMainPage from './main-page';
+import createContactPage from './contact-creator';
+import createMenuPage from './menu-creator';
+/* eslint-enable import/no-cycle */
 
 function createNavigation() {
   const content = document.getElementById('content');
