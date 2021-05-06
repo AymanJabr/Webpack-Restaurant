@@ -4,19 +4,29 @@ import createContactPage from './contact-creator';
 import createMenuPage from './menu-creator';
 /* eslint-enable import/no-cycle */
 
-function createNavigation() {
+const createNavigation = () => {
   const content = document.getElementById('content');
 
-  const linkMain = '<a href="#" class="main">Go to Main Page</a>';
-  const linkMenu = '<a href="#" class="menu">Go to Menu Page</a>';
-  const linkContact = '<a href="#" class="contact">Go to Contacts Page</a>';
+  const linkMain = document.createElement('a');
+  linkMain.innerText = 'Go To Main Page ';
+  linkMain.href = '#';
+  linkMain.classList.add('main');
+  content.appendChild(linkMain);
 
-  content.innerHTML += linkMain;
-  content.innerHTML += linkMenu;
-  content.innerHTML += linkContact;
-}
+  const linkMenu = document.createElement('a');
+  linkMenu.innerText = 'Go To Menu Page ';
+  linkMenu.href = '#';
+  linkMenu.classList.add('menu');
+  content.appendChild(linkMenu);
 
-function addAllEventListeners() {
+  const linkContact = document.createElement('a');
+  linkContact.innerText = 'Go To Contact Page ';
+  linkContact.href = '#';
+  linkContact.classList.add('contact');
+  content.appendChild(linkContact);
+};
+
+const addAllEventListeners = () => {
   document.querySelectorAll('.main').forEach((item) => item.addEventListener('click', () => {
     createMainPage();
   }));
@@ -26,6 +36,6 @@ function addAllEventListeners() {
   document.querySelectorAll('.contact').forEach((item) => item.addEventListener('click', () => {
     createContactPage();
   }));
-}
+};
 
 export { createNavigation, addAllEventListeners };
