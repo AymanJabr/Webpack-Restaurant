@@ -1,5 +1,5 @@
-import {createMainPage} from './main-page'
+import { createMainPage } from './main-page';
 
-createMainPage()
+createMainPage();
 
-console.log("I am created inside index, inside src")
+console.log('I am created inside index, inside src');

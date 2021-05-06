@@ -1,22 +1,21 @@
-import {createNavigation, addAllEventListeners} from './nav-creator'
+import { createNavigation, addAllEventListeners } from './nav-creator';
 
 function createMainPage() {
-    let content = document.getElementById('content')
+  const content = document.getElementById('content');
 
-    content.innerHTML = ''
+  content.innerHTML = '';
 
-    createNavigation()
+  createNavigation();
 
-    let restaurantTitle = '<h1>Restaurant name</h1>'
-    let restaurantImage = '<img src="" alt="image of Restaurant">'
-    let restaurantDescription = '<p>This is one of the best Restaurant that I had the privilege of eating in</p>'
+  const restaurantTitle = '<h1>Restaurant name</h1>';
+  const restaurantImage = '<img src="" alt="image of Restaurant">';
+  const restaurantDescription = '<p>This is one of the best Restaurant that I had the privilege of eating in</p>';
 
+  content.innerHTML += restaurantTitle;
+  content.innerHTML += restaurantImage;
+  content.innerHTML += restaurantDescription;
 
-    content.innerHTML += restaurantTitle
-    content.innerHTML += restaurantImage
-    content.innerHTML += restaurantDescription
-
-    addAllEventListeners()
+  addAllEventListeners();
 }
 
-export { createMainPage }
+export { createMainPage };
